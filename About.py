@@ -5,8 +5,8 @@ import json
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LinearRegression
 
-df1=pd.read_csv(open('C:\\Users\\komal\\Downloads\\Project\\cols.csv'))
-csvfile=open('C:\\Users\\komal\\Downloads\\Project\\output.csv','rb')
+df1=pd.read_csv(open('cols.csv'))
+csvfile=open('output.csv','rb')
 
 df=pd.read_csv(csvfile)
 X=df.drop(['price'],axis='columns')
